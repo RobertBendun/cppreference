@@ -7,14 +7,14 @@
 pkgname=cppreference
 pkgver=20240610
 pkgrel=1
-pkgdesc="A complete reference for the features in the C++ Standard Library."
+pkgdesc="A complete reference for the features in the C++ Standard Library. HTML Book"
 arch=('any')
 url="http://en.cppreference.com/"
 license=('CCPL:cc-by-sa')
 options=('!strip' '!emptydirs')
 depends=('ttf-dejavu')
-source=("https://github.com/PeterFeicht/cppreference-doc/releases/download/v20240610/cppreference-doc-20240610.tar.xz")
-sha256sums=('840e08db99650fc58ea9fd0838e5141f2da4fa9f86968367b1549b06f54f5f26')
+source=("https://github.com/PeterFeicht/cppreference-doc/releases/download/v20240610/html-book-20240610.tar.xz")
+sha256sums=('bc2412a5eaf7f6094d4eb70f765bdf8f649e654a8aabf20160c5a81697684761')
 
 package() {
 	rm "$srcdir/reference/common/DejaVuSansMonoCondensed60.ttf"
